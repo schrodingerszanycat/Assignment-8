@@ -8,7 +8,7 @@ int checkEqual(int *, int *, int);
 
 int main() {
     
-    int m, n;
+    int m = 0, n = 0;
     printf("Enter the size of array and sub-array: ");
     scanf("%d %d", &m, &n);
     int arr[m], sub_arr[n];
@@ -42,7 +42,7 @@ int checkSubarray(int arr[], int sub_arr[], int m, int n) {
      
     int eval = checkEqual(sub_arr, copy, n);
     if (count == n && eval == 1) return 1;
-    else return 9;   
+    return -1;   
 
 }
 
@@ -53,5 +53,5 @@ int checkEqual(int sub_arr[], int copy[], int n) {
             c = c+1;
     }
     if (c == n) return 1;
-    else return 9; 
+    return -1; 
 }
