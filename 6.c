@@ -4,6 +4,8 @@
 #include <stdlib.h>
 #include <limits.h>
 
+int max_sum(int arr[], int size);
+
 int main() {
 
     int size = 0;
@@ -15,6 +17,14 @@ int main() {
         scanf ("%d", &arr[i]);
     }
 
+    printf("The maximum contiguous subarray sum is %d.\n", max_sum(arr, size));
+
+    free(arr);
+    arr = NULL;
+    return 0;
+}
+
+int max_sum(int arr[], int size) {
     int max = INT_MIN;
 
     for (int i = 0; i < size; i++) {
@@ -24,11 +34,8 @@ int main() {
             if (sum > max) max = sum;
         }
     }
-    printf("The maximum contiguous subarray sum is %d.\n", max);
-
-    free(arr);
-    arr = NULL;
-    return 0;
+    return max;
 }
+
 
 //ALSO CHECK OUT https://www.geeksforgeeks.org/maximum-subarray-sum-using-divide-and-conquer-algorithm/
