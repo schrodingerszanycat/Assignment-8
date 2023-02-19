@@ -1,7 +1,6 @@
 PENDING
 1. Write a function in C to find if a given integer x appears more than n/2 times in an
 array of n integers.
-
 6. Write a function in C to find the maximum subarray sum of a given array.
 7. Write a function in C to find the maximum circular subarray sum of a given array.
 9. Write a function in C to generate a random permutation of array elements.
