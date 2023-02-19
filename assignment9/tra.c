@@ -5,7 +5,7 @@
 
 //int swap(int *x, int *y);
 
-void transpose(int arr, int r, int c);
+void transpose(int r, int c, int arr[][c]);
 
 int main() {
     int r = 0, c = 0;
@@ -20,7 +20,7 @@ int main() {
         }
     }
 
-    print("Original matrix is: ");
+    printf("Original matrix is: ");
     for (int i = 0; i<r; i++){
         for (int j = 0; j<c; j++) {
             printf("%d ", arr[i][j]);
@@ -44,7 +44,7 @@ int main() {
 //     *y = temp;
 // }
 
-void transpose(int arr, int r, int c) {
+void transpose(int r, int c, int arr[][c]) {
     int i, j;
     for (i = 0; i<r; i++) {
          
@@ -54,4 +54,5 @@ void transpose(int arr, int r, int c) {
             arr[i][j] = arr[j][i];
             arr[j][i] = temp;
         }
+    }
 }
