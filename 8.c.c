@@ -2,6 +2,10 @@
 
 #include <stdio.h>
 
+int swap(int *x, int *y);
+
+int to_shift_zeroes(int arr[], int size);
+
 int main() {
 
     int size = 0;
@@ -23,6 +27,12 @@ int main() {
     for (int j = 0; j<size; j++) 
         printf("%d ", arr[j]);
     printf("\n");
+}
+
+int swap(int *x, int *y) {
+    int temp = *x;
+    *x = *y;
+    *y = temp;
 }
 
 int to_shift_zeroes(int arr[], int size) {
