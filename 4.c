@@ -7,7 +7,7 @@ int checkSubset(int *, int *, int, int);
 int main() {
     
     int m = 0, n = 0;
-    printf("Enter the size of array and sub-array: ");
+    printf("Enter the size of array and sub-set: ");
     scanf("%d %d", &m, &n);
     int arr[m], sub_set[n];
     printf("Enter elements of the array: ");
