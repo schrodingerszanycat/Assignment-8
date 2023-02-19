@@ -25,6 +25,7 @@ int main() {
 }
 
 int max_sum(int arr[], int size) {
+
     int max = INT_MIN;
 
     for (int i = 0; i < size; i++) {
@@ -33,7 +34,7 @@ int max_sum(int arr[], int size) {
             sum += arr[j];
             if (sum > max) max = sum;
         }
-    }
+    }    
     return max;
 }
 
