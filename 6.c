@@ -2,6 +2,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <limits.h>
 
 int main() {
 
@@ -14,7 +15,7 @@ int main() {
         scanf ("%d", &arr[i]);
     }
 
-    int max;
+    int max = INT_MIN;
 
     for (int i = 0; i < size; i++) {
         int sum = 0;
@@ -24,7 +25,10 @@ int main() {
         }
     }
     printf("The maximum contiguous subarray sum is %d.\n", max);
+
+    free(arr);
+    arr = NULL;
+    return 0;
 }
 
-//WHY DID YOU USE INT_MIN WHEN THERE WAS NO NEED (APPARENTLY)
 //ALSO CHECK OUT https://www.geeksforgeeks.org/maximum-subarray-sum-using-divide-and-conquer-algorithm/

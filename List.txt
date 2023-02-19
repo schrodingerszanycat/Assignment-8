@@ -21,7 +21,6 @@ array of integers.
 
 //TO BE VERIFIED
 //What is the difference between a sub-array and subset?
-//WHY DID YOU USE INT_MIN WHEN THERE WAS NO NEED (APPARENTLY) in 6.C assignment 8?
 //ALSO CHECK OUT https://www.geeksforgeeks.org/maximum-subarray-sum-using-divide-and-conquer-algorithm/
 
 
