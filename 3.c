@@ -1,6 +1,8 @@
 /*3. Write a function in C to implement binary search on a sorted array.*/
 #include <stdio.h>
 
+int bin_search(int arr[], int low, int high, int x);
+
 int main() {
     int arr[10] = {1,12,33,44,57,67,73,89,97,100};
     int n = sizeof(arr)/sizeof(int);
