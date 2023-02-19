@@ -32,10 +32,10 @@ int checkSubarray(int arr[], int sub_arr[], int m, int n) {
 
     for (int i = 0; i < n; i++) {
         for (int j = 0; i < m; j++) {
-        if (sub_arr[i] == arr[j]) {
-            count++;
-            for (int k = 0; k<n; k++) 
-                copy[k] = arr[j];  
+            if (sub_arr[i] == arr[j]) {
+                count++;
+                for (int k = 0; k<n; k++) 
+                    copy[k] = arr[j];  
             }          
         }
     } 
