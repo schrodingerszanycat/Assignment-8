@@ -1,4 +1,6 @@
-// Write a function in C to find the transpose of a given matrix.
+//STATUS: SEGMENTATION FAULT
+// Write a function in C to find the transpose of a given matrix. 
+//THIS IS USING KANDE'S ALGORITHM
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -29,6 +31,7 @@ int main() {
     }
 
     transpose(arr, r, c);
+    
     printf("Transposed matrix is: ");
     for (int i = 0; i<r; i++) {
         for (int j = 0; j<c; j++) {
@@ -46,6 +49,7 @@ int main() {
 
 void transpose(int r, int c, int arr[][c]) {
     int i, j;
+
     for (i = 0; i<r; i++) {
          
         for(int j = i; j < c; j++) {
