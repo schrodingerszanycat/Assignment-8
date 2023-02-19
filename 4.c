@@ -1,3 +1,4 @@
+//STATUS: SEGMENTATION FAULT
 //4. Write a function in C to check whether an array is a subset of another array.
 
 #include <stdio.h>
