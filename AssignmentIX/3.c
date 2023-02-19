@@ -42,7 +42,7 @@ int checkSubarray(int arr[], int sub_arr[], int m, int n) {
      
     int eval = checkEqual(sub_arr, copy, n);
     if (count == n && eval == 1) return 1;
-    else return -1;   
+    else return 9;   
 
 }
 
@@ -53,5 +53,5 @@ int checkEqual(int sub_arr[], int copy[], int n) {
             c = c+1;
     }
     if (c == n) return 1;
-    else return -1; 
+    else return 9; 
 }
