@@ -2,9 +2,9 @@
 
 #include <stdio.h>
 
-int bubble_sort(int *, int); 
+void bubble_sort(int arr[], int size);
 
-int swap(int *, int *);
+void swap(int *, int *);
 
 int main() {
 
@@ -21,16 +21,20 @@ int main() {
     printf("\n");
 }
 
-int swap(int *x, int *y) {
+void swap(int *x, int *y) {
     int temp = *x;
     *x = *y;
     *y = temp;
 }
 
-int bubble_sort(int arr[], int size) {
+void bubble_sort(int arr[], int size) {
+
     for (int i = 0; i<size-1; i++) {
-        if (arr[i+1] < arr[i]) {
-            swap(arr[i+1], arr[i]);
+
+        for (int j = 0; j<size-1; j++) {
+
+            if (arr[j+1] < arr[j]) 
+                swap(&arr[j+1], &arr[j]);
         }
     }
 }
