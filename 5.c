@@ -1,5 +1,8 @@
 /*5. Write a function in C to implement selection sort.*/
 #include <stdio.h>
+int swap(int x, int y);
+int selection_sort(int arr[], int size);
+
 
 int main() { 
     int size = 0;
@@ -11,20 +14,22 @@ int main() {
 
     selection_sort(arr, size);    
 }
-int swap(int x, int y) {
-    int temp = x;
-    x = y;
-    y = temp;
+int swap(int *x, int *y) {
+    int temp = *x;
+    *x = *y;
+    *y = temp;
 }
 int selection_sort(int arr[], int size) {
     int min = 0;
-    for (int i = 1; i<size; i++) {
-        if (arr[i]>arr[min]) {
-            swap(arr[i], min);
+    for (int i = 0; i<size; i++) {
+        for (int j = i+1; j<size; j++) {
+            if (arr[j]<arr[min]) {
+                swap(&arr[j], &arr[min]);
+                min = arr[j];
+            } 
+            else continue;
         }
-        else {
-            min = min + 1;
-        }
+
     }
     printf("The new array is:\n");
     for (int j = 0; j<size; j++) {        
