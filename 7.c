@@ -26,4 +26,13 @@ int main() {
 
 int max_circ_sum(int arr[], int size) {
     
+    int max = INT_MIN;
+    for (int i = 0l i<size; i++) {
+        int sum = 0;
+        for (int j = i; j<size; j++) {
+            sum += arr[j];
+            if (max > sum) max = sum;
+        }
+        for (int j = )
+    }
 }
